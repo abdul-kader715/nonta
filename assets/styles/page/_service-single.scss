@@ -1,0 +1,28 @@
+/* services_single_section */
+.services_single_section {
+
+    .wrap {
+
+        .image {
+            margin-bottom: 30px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .content {
+            max-width: 1040px;
+            h2 {
+                font-size: 22px;
+                color: $heading-color;
+                font-weight: 700;
+            }
+
+            p {
+                font-size: 17px;
+                color: rgb(99, 99, 99);
+            }
+        }
+    }
+}
