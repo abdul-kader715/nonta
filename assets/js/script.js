@@ -38,6 +38,10 @@
   });
 
 
+ 
+
+
+
   /* brand_slider  */
   $('.brand_slider').slick({
     // infinite: true,
@@ -258,3 +262,14 @@
 
 
 })(jQuery)
+
+
+function openNav() {
+  // document.getElementById("mobile_cart").style.width = "320px";
+  document.getElementById("mobile_cart").style.right = "0";
+}
+
+function closeNav() {
+  // document.getElementById('mobile_cart').style.width = "0";
+  document.getElementById("mobile_cart").style.right = "-100%";
+}

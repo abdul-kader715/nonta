@@ -358,7 +358,7 @@
 }
 
 /* testimonil_section_s3 */
-.testimonial_section_s3 {
+.testimonial_section_s3,.testimonial_section_s4 {
     position: relative;
     border-bottom: 1px solid #dddddd;
 
@@ -397,7 +397,7 @@
     }
 }
 
-.testimonial_slider_s3 {
+.testimonial_slider_s3,.testimonial_section_s4 {
     .slick-slide {
         margin: 0 15px;
 
@@ -541,6 +541,17 @@
         // &:last-child{
         //     background: #2e9ecd;
         // }
+    }
+}
+.testimonial_section_s4{
+    .top_title {
+        h2 {
+            color: $template-color-s2;
+        }
+    
+        h3 {
+            color: rgb(20, 64, 71);
+        }
     }
 }
 

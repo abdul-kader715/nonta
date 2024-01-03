@@ -179,12 +179,13 @@
 
     .slick-dots {
         width: 60px;
-        height: 130px;
         background: $white;
         border-radius: 100px;
         text-align: center;
         bottom: 50px;
         right: 20px;
+        padding: 10px 0;
+        padding-top: 15px;
 
         li {
             margin: 0 15px;
@@ -196,13 +197,10 @@
             width: 30px;
             height: 30px;
             padding: 0;
-            margin: 15px 0;
             color: $white;
             border: none;
             border-radius: 100%;
             background-color: $template-color;
-
-            text-indent: -9999px;
         }
 
         li.slick-active button {
@@ -210,10 +208,35 @@
         }
 
     }
-    
+
+
+    .slick-dots {
+
+
+        li {
+            font-size: 16px;
+            font-weight: 700;
+            display: block;
+            height: 40px;
+            cursor: pointer;
+            color: #fff;
+        }
+
+        button {
+            font-size: 16px;
+            font-weight: 700;
+            display: block;
+            padding: 5px;
+            cursor: pointer;
+            color: #fff;
+        }
+    }
+
+
 }
+
 .slick-dotted.slick-slider {
-     margin-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 .video_btn {
@@ -738,29 +761,35 @@
 
     .hero_slider_item {
         z-index: 11;
+
         @media (max-width:575px) {
             height: 500px;
-         }
+        }
+
         .content {
             max-width: 740px;
+
             @media (max-width:1199px) {
                 max-width: 640px;
             }
-           
+
             .title {
                 margin-bottom: 10px;
 
                 h2 {
                     color: #144047;
                     text-transform: capitalize;
+
                     @media (max-width:1199px) {
-                       font-size: 40px;
+                        font-size: 40px;
                     }
+
                     @media (max-width:991px) {
-                       font-size: 35px;
+                        font-size: 35px;
                     }
+
                     @media (max-width:767px) {
-                       font-size: 30px;
+                        font-size: 30px;
                     }
                 }
             }
@@ -769,22 +798,26 @@
                 left: 0;
                 top: -30px;
                 bottom: auto;
+
                 @media (max-width:767px) {
-                  left: auto;
-                  right: 0;
-                 }
+                    left: auto;
+                    right: 0;
+                }
+
                 @media (max-width:575px) {
-                   display: none;
-                 }
+                    display: none;
+                }
             }
 
             .text {
                 @media (max-width:1199px) {
                     max-width: 500px;
                 }
+
                 @media (max-width:575px) {
                     margin-bottom: 30px;
-                 }
+                }
+
                 p {
                     color: #636363;
                 }
@@ -829,12 +862,15 @@
             right: 100px;
             bottom: 100px;
             z-index: -1;
+
             @media (max-width:1399px) {
                 right: 0;
             }
+
             @media (max-width:1199px) {
                 right: -150px;
             }
+
             @media (max-width:991px) {
                 display: none;
             }
@@ -848,12 +884,15 @@
             bottom: 0px;
             width: auto;
             height: auto;
+
             @media (max-width:1399px) {
                 right: 100px;
             }
+
             @media (max-width:1199px) {
                 right: 0;
             }
+
             @media (max-width:991px) {
                 display: none;
             }
@@ -868,12 +907,15 @@
         position: absolute;
         bottom: -65px;
         left: 15%;
+
         @media (max-width:991px) {
             bottom: 65px;
         }
+
         @media (max-width:767px) {
-           display: none;
+            display: none;
         }
+
         .item {
 
             background: #f9f9f9;

@@ -79,7 +79,7 @@
         <a href="index.html" class="logo">
           <img src="assets/images/logo.png" alt="">
         </a>
-        <div class="header_about_btn">
+        <div class="header_about_btn" onclick="openNav()">
           <img src="assets/images/about_btn.png" alt="">
         </div>
         <div class="container">
@@ -105,25 +105,34 @@
                   <li class="menu_chaild">
                     <a href="#">Service</a>
                     <ul class="submenu">
-                      <li><a href="services.html">Services</a></li>
+                      <li><a href="services.html">Services 1</a></li>
+                      <li><a href="services-s2.html">Services 2</a></li>
+                      <li><a href="services-s3.html">Services 3</a></li>
+                      <li><a href="services-s4.html">Services 4</a></li>
                       <li><a href="services-single.html">Services single</a></li>
                     </ul>
                   </li>
                   <li class="menu_chaild">
                     <a href="#">Pages</a>
                     <ul class="submenu">
-                      <li><a href="#">home style 1</a></li>
-                      <li><a href="#">home style 1</a></li>
+                      <li><a href="causes.html">causes</a></li>
+                      <li><a href="causes-single.html">causes single</a></li>
+                      <li><a href="project.html">project</a></li>
+                      <li><a href="project-single.html">project single</a></li>
+                      <li><a href="team.html">team</a></li>
+                      <li><a href="testimonial.html">testimonial</a></li>
+                      <li><a href="faq.html">faq</a></li>
+                      <li><a href="404.html">404</a></li>
                     </ul>
                   </li>
                   <li class="menu_chaild">
                     <a href="#">blog</a>
                     <ul class="submenu">
-                      <li><a href="#">home style 1</a></li>
-                      <li><a href="#">home style 1</a></li>
+                      <li><a href="blog.html">Blog</a></li>
+                      <li><a href="blog-single.html">Blog Single</a></li>
                     </ul>
                   </li>
-                  <li><a href="#">contact</a></li>
+                  <li><a href="contact.html">contact</a></li>
                 </ul>
               </div>
             </div>
@@ -132,10 +141,13 @@
                 <div class="search_icon">
                   <i class="ti-search bx-search"></i>
                   <form class="input-box">
-                    <input class="search_fild" type="text" placeholder="Search...">
+                    <div>
+                      <input class="search_fild" type="text" placeholder="Search...">
+                      <button type="button"><i class="ti-search"></i></button>
+                    </div>
                   </form>
                 </div>
-                <a href="donate.html" class="btn_primary">DONATE NOW<i class="ti-arrow-right"></i></a>
+                <a href="causes-single.html" class="btn_primary">DONATE NOW<i class="ti-arrow-right"></i></a>
               </div>
             </div>
           </div>
@@ -143,6 +155,46 @@
       </div>
     </header>
 
+    <div class="mobile_cart" id="mobile_cart">
+      <div class="wrap_cart">
+        <div class="about_logo">
+          <img src="assets/images/logo.png" alt="">
+        </div>
+        <div class="cart_close" onclick="closeNav()">×</div>
+        <div class="content">
+          <p>Nonta is a website that builds and organizes nonprofit programs for private and government organizations.
+          </p>
+          <h2>Contact Info</h2>
+          <span>+123 456 789 33 3</span>
+          <span>Madison Street, NY United States of America</span>
+          <span>nonta@gmail.com</span>
+          <h2>Office Address</h2>
+          <span>+Time Square, New York USA, 3454</span>
+          <ul class="social_widget">
+            <li>
+              <a href="#">
+                <i class="ti-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="ti-twitter-alt"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="ti-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="ti-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
     <!-- ==== hero start ==== -->
     <section class="hero_slider">
@@ -152,7 +204,7 @@
         </div>
         <div class="container">
           <div class="content">
-            <div class="shado_text animated" data-animation-in="fadeInUp" >
+            <div class="shado_text animated" data-animation-in="fadeInUp">
               <span>NONTA</span>
               <div class="shape-4">
                 <img src="assets/images/slider/solidarity.png" alt="">
@@ -193,7 +245,7 @@
         </div>
         <div class="container">
           <div class="content">
-            <div class="shado_text animated" data-animation-in="fadeInUp" >
+            <div class="shado_text animated" data-animation-in="fadeInUp">
               <span>NONTA</span>
               <div class="shape-4">
                 <img src="assets/images/slider/solidarity.png" alt="">
@@ -234,7 +286,7 @@
         </div>
         <div class="container">
           <div class="content">
-            <div class="shado_text animated" data-animation-in="fadeInUp" >
+            <div class="shado_text animated" data-animation-in="fadeInUp">
               <span>NONTA</span>
               <div class="shape-4">
                 <img src="assets/images/slider/solidarity.png" alt="">
@@ -739,7 +791,7 @@
                   <img src="assets/images/project/1.jpg" alt="">
                 </div>
                 <div class="project_overlay">
-                  <a href="project_single.html">
+                  <a href="project-single.html">
                     <img src="assets/images/project/icon.png" alt="">
                   </a>
                 </div>
@@ -751,7 +803,7 @@
                   <img src="assets/images/project/2.jpg" alt="">
                 </div>
                 <div class="project_overlay">
-                  <a href="project_single.html">
+                  <a href="project-single.html">
                     <img src="assets/images/project/icon.png" alt="">
                   </a>
                 </div>
@@ -763,7 +815,7 @@
                   <img src="assets/images/project/3.jpg" alt="">
                 </div>
                 <div class="project_overlay">
-                  <a href="project_single.html">
+                  <a href="project-single.html">
                     <img src="assets/images/project/icon.png" alt="">
                   </a>
                 </div>
@@ -775,7 +827,7 @@
                   <img src="assets/images/project/4.jpg" alt="">
                 </div>
                 <div class="project_overlay">
-                  <a href="project_single.html">
+                  <a href="project-single.html">
                     <img src="assets/images/project/icon.png" alt="">
                   </a>
                 </div>
@@ -851,7 +903,6 @@
       </div>
     </section>
 
-
     <!-- ==== contact start ==== -->
     <section class="contact_section">
       <div class="container-fluid">
@@ -875,7 +926,7 @@
                   <input type="number" class="form-control" placeholder="Phone Number*">
                 </div>
                 <div>
-                  <input type="date" class="form-control" >
+                  <input type="date" class="form-control">
                 </div>
                 <div>
                   <input type="email" class="form-control" placeholder="Email Address*">
@@ -898,7 +949,7 @@
               <div class="map">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13249.247068040606!2d151.20960562674117!3d-33.8816236491114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1468899355787"
-                    style="border:0; width: 100%;" allowfullscreen></iframe>
+                  style="border:0; width: 100%;" allowfullscreen></iframe>
               </div>
             </div>
           </div>

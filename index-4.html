@@ -10,7 +10,7 @@
     <title>medicols</title>
 
     <!-- CSS here -->
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/fontawesome-all.css">
     <link rel="stylesheet" href="assets/css/themify-icons.css">
     <link rel="stylesheet" href="assets/css/jqueryui.css">
@@ -27,15 +27,13 @@
 <body>
 
     <div class="main_page_wrapper">
-
-
         <!-- ==== header start ==== -->
         <header class="header_section header_section_s4">
             <div class="header_wrap">
                 <a href="index.html" class="logo">
                     <img src="assets/images/logo_s5.png" alt="">
                 </a>
-                <div class="header_about_btn">
+                <div class="header_about_btn" onclick="openNav()">
                     <img src="assets/images/about_btn.png" alt="">
                 </div>
                 <div class="container">
@@ -61,25 +59,34 @@
                                     <li class="menu_chaild">
                                         <a href="#">Service</a>
                                         <ul class="submenu">
-                                            <li><a href="services.html">Services</a></li>
+                                            <li><a href="services.html">Services 1</a></li>
+                                            <li><a href="services-s2.html">Services 2</a></li>
+                                            <li><a href="services-s3.html">Services 3</a></li>
+                                            <li><a href="services-s4.html">Services 4</a></li>
                                             <li><a href="services-single.html">Services single</a></li>
                                         </ul>
                                     </li>
                                     <li class="menu_chaild">
                                         <a href="#">Pages</a>
                                         <ul class="submenu">
-                                            <li><a href="#">home style 1</a></li>
-                                            <li><a href="#">home style 1</a></li>
+                                            <li><a href="causes.html">causes</a></li>
+                                            <li><a href="causes-single.html">causes single</a></li>
+                                            <li><a href="project.html">project</a></li>
+                                            <li><a href="project-single.html">project single</a></li>
+                                            <li><a href="team.html">team</a></li>
+                                            <li><a href="testimonial.html">testimonial</a></li>
+                                            <li><a href="faq.html">faq</a></li>
+                                            <li><a href="404.html">404</a></li>
                                         </ul>
                                     </li>
                                     <li class="menu_chaild">
                                         <a href="#">blog</a>
                                         <ul class="submenu">
-                                            <li><a href="#">home style 1</a></li>
-                                            <li><a href="#">home style 1</a></li>
+                                            <li><a href="blog.html">Blog</a></li>
+                                            <li><a href="blog-single.html">Blog Single</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#">contact</a></li>
+                                    <li><a href="contact.html">contact</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -88,10 +95,14 @@
                                 <div class="search_icon">
                                     <i class="ti-search bx-search"></i>
                                     <form class="input-box">
-                                        <input class="search_fild" type="text" placeholder="Search...">
+                                        <div>
+                                            <input class="search_fild" type="text" placeholder="Search...">
+                                            <button type="button"><i class="ti-search"></i></button>
+                                        </div>
                                     </form>
                                 </div>
-                                <a href="donate.html" class="btn_primary">DONATE NOW<i class="ti-arrow-right"></i></a>
+                                <a href="causes-single.html" class="btn_primary">DONATE NOW<i
+                                        class="ti-arrow-right"></i></a>
                             </div>
                         </div>
                         <div class="col-xl-2 col-12">
@@ -125,6 +136,48 @@
                 </div>
             </div>
         </header>
+
+        <div class="mobile_cart" id="mobile_cart">
+            <div class="wrap_cart">
+                <div class="about_logo">
+                    <img src="assets/images/logo.png" alt="">
+                </div>
+                <div class="cart_close" onclick="closeNav()">×</div>
+                <div class="content">
+                    <p>Nonta is a website that builds and organizes nonprofit programs for private and government
+                        organizations.
+                    </p>
+                    <h2>Contact Info</h2>
+                    <span>+123 456 789 33 3</span>
+                    <span>Madison Street, NY United States of America</span>
+                    <span>nonta@gmail.com</span>
+                    <h2>Office Address</h2>
+                    <span>+Time Square, New York USA, 3454</span>
+                    <ul class="social_widget">
+                        <li>
+                            <a href="#">
+                                <i class="ti-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="ti-twitter-alt"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="ti-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="ti-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
         <!-- ==== hero start ==== -->
         <section class="header_section_s4">
@@ -699,7 +752,7 @@
                             </div>
                             <div class="content">
                                 <div class="text">
-                                    <h2><a href="project-single.hml">Medical treatment</a></h2>
+                                    <h2><a href="project-single.html">Medical treatment</a></h2>
                                     <p>The generated lorem Ipsum is poor
                                         non-characteristic.</p>
                                 </div>
@@ -716,7 +769,7 @@
                             </div>
                             <div class="content">
                                 <div class="text">
-                                    <h2><a href="project-single.hml">Poor Application</a></h2>
+                                    <h2><a href="project-single.html">Poor Application</a></h2>
                                     <p>The generated lorem Ipsum is poor
                                         non-characteristic.</p>
                                 </div>
@@ -733,7 +786,7 @@
                             </div>
                             <div class="content">
                                 <div class="text">
-                                    <h2><a href="project-single.hml">School of Catalog</a></h2>
+                                    <h2><a href="project-single.html">School of Catalog</a></h2>
                                     <p>The generated lorem Ipsum is poor
                                         non-characteristic.</p>
                                 </div>
@@ -797,37 +850,38 @@
                             </div>
                             <div class="content">
                                 <ul>
-                                    <li><img class="img1" src="assets/images/pricing/img1.png" alt=""> <span>We are privileged to work with.</span></li>
-                                    <li><img class="img1" src="assets/images/pricing/img1.png" alt=""> <span>24/7 system monitoring</span></li>
-                                    <li><img class="img1" src="assets/images/pricing/img1.png" alt=""> <span>Encourage every team member</span></li>
+                                    <li><img class="img1" src="assets/images/pricing/img1.png" alt=""> <span>We are
+                                            privileged to work with.</span></li>
+                                    <li><img class="img1" src="assets/images/pricing/img1.png" alt=""> <span>24/7 system
+                                            monitoring</span></li>
+                                    <li><img class="img1" src="assets/images/pricing/img1.png" alt=""> <span>Encourage
+                                            every team member</span></li>
                                 </ul>
                             </div>
                             <div class="prici_btn">
                                 <a href="#" class="btn_See">See More<i class="ti-arrow-right"></i></a>
                             </div>
                             <div class="shape_1">
-                                <svg version="1.0"
-                                width="100%" height="100%" viewBox="0 0 400.000000 202.000000"
-                                preserveAspectRatio="xMidYMid meet">
-
-                                <g transform="translate(0.000000,202.000000) scale(0.100000,-0.100000)"
-                                 stroke="none">
-                                <path d="M0 1014 l0 -1006 23 16 c116 84 421 280 538 345 396 219 822 371
-                                1167 415 152 20 392 20 532 2 528 -71 1130 -338 1721 -765 19 -13 19 6 19 993
-                                l0 1006 -2000 0 -2000 0 0 -1006z"/>
-                                </g>
-                                </svg>
-                            </div>
-                            <div class="shape_2">
-                                <svg version="1.0"
-                                    width="100%" height="100%" viewBox="0 0 400.000000 202.000000"
+                                <svg version="1.0" width="100%" height="100%" viewBox="0 0 400.000000 202.000000"
                                     preserveAspectRatio="xMidYMid meet">
 
                                     <g transform="translate(0.000000,202.000000) scale(0.100000,-0.100000)"
-                                     stroke="none">
-                                    <path d="M0 1006 l0 -1006 2000 0 2000 0 0 1006 c0 987 0 1006 -19 993 -591
+                                        stroke="none">
+                                        <path d="M0 1014 l0 -1006 23 16 c116 84 421 280 538 345 396 219 822 371
+                                1167 415 152 20 392 20 532 2 528 -71 1130 -338 1721 -765 19 -13 19 6 19 993
+                                l0 1006 -2000 0 -2000 0 0 -1006z" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="shape_2">
+                                <svg version="1.0" width="100%" height="100%" viewBox="0 0 400.000000 202.000000"
+                                    preserveAspectRatio="xMidYMid meet">
+
+                                    <g transform="translate(0.000000,202.000000) scale(0.100000,-0.100000)"
+                                        stroke="none">
+                                        <path d="M0 1006 l0 -1006 2000 0 2000 0 0 1006 c0 987 0 1006 -19 993 -591
                                     -427 -1193 -694 -1721 -765 -597 -79 -1305 138 -2030 622 -102 68 -195 131
-                                    -207 140 l-23 16 0 -1006z"/>
+                                    -207 140 l-23 16 0 -1006z" />
                                     </g>
                                 </svg>
                             </div>
@@ -845,38 +899,40 @@
                             </div>
                             <div class="content">
                                 <ul>
-                                    <li><img class="img1" src="assets/images/pricing/img1.png" alt=""> <span>We are privileged to work with.</span></li>
-                                    <li><img class="img2" src="assets/images/pricing/img2.png" alt=""> <span>24/7 system monitoring</span></li>
-                                    <li><img class="img1" src="assets/images/pricing/img1.png" alt=""> <span>Encourage every team member</span></li>
-                                    <li><img class="img1" src="assets/images/pricing/img1.png" alt=""> <span>Remote best support</span></li>
+                                    <li><img class="img1" src="assets/images/pricing/img1.png" alt=""> <span>We are
+                                            privileged to work with.</span></li>
+                                    <li><img class="img2" src="assets/images/pricing/img2.png" alt=""> <span>24/7 system
+                                            monitoring</span></li>
+                                    <li><img class="img1" src="assets/images/pricing/img1.png" alt=""> <span>Encourage
+                                            every team member</span></li>
+                                    <li><img class="img1" src="assets/images/pricing/img1.png" alt=""> <span>Remote best
+                                            support</span></li>
                                 </ul>
                             </div>
                             <div class="prici_btn">
                                 <a href="#" class="btn_See">See More<i class="ti-arrow-right"></i></a>
                             </div>
                             <div class="shape_1">
-                                <svg version="1.0"
-                                width="100%" height="100%" viewBox="0 0 400.000000 202.000000"
-                                preserveAspectRatio="xMidYMid meet">
-
-                                <g transform="translate(0.000000,202.000000) scale(0.100000,-0.100000)"
-                                 stroke="none">
-                                <path d="M0 1014 l0 -1006 23 16 c116 84 421 280 538 345 396 219 822 371
-                                1167 415 152 20 392 20 532 2 528 -71 1130 -338 1721 -765 19 -13 19 6 19 993
-                                l0 1006 -2000 0 -2000 0 0 -1006z"/>
-                                </g>
-                                </svg>
-                            </div>
-                            <div class="shape_2">
-                                <svg version="1.0"
-                                    width="100%" height="100%" viewBox="0 0 400.000000 202.000000"
+                                <svg version="1.0" width="100%" height="100%" viewBox="0 0 400.000000 202.000000"
                                     preserveAspectRatio="xMidYMid meet">
 
                                     <g transform="translate(0.000000,202.000000) scale(0.100000,-0.100000)"
-                                     stroke="none">
-                                    <path d="M0 1006 l0 -1006 2000 0 2000 0 0 1006 c0 987 0 1006 -19 993 -591
+                                        stroke="none">
+                                        <path d="M0 1014 l0 -1006 23 16 c116 84 421 280 538 345 396 219 822 371
+                                1167 415 152 20 392 20 532 2 528 -71 1130 -338 1721 -765 19 -13 19 6 19 993
+                                l0 1006 -2000 0 -2000 0 0 -1006z" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="shape_2">
+                                <svg version="1.0" width="100%" height="100%" viewBox="0 0 400.000000 202.000000"
+                                    preserveAspectRatio="xMidYMid meet">
+
+                                    <g transform="translate(0.000000,202.000000) scale(0.100000,-0.100000)"
+                                        stroke="none">
+                                        <path d="M0 1006 l0 -1006 2000 0 2000 0 0 1006 c0 987 0 1006 -19 993 -591
                                     -427 -1193 -694 -1721 -765 -597 -79 -1305 138 -2030 622 -102 68 -195 131
-                                    -207 140 l-23 16 0 -1006z"/>
+                                    -207 140 l-23 16 0 -1006z" />
                                     </g>
                                 </svg>
                             </div>
@@ -893,37 +949,38 @@
                             </div>
                             <div class="content">
                                 <ul>
-                                    <li><img class="img1" src="assets/images/pricing/img1.png" alt=""> <span>We are privileged to work with.</span></li>
-                                    <li><img class="img1" src="assets/images/pricing/img1.png" alt=""> <span>24/7 system monitoring</span></li>
-                                    <li><img class="img2" src="assets/images/pricing/img2.png" alt=""> <span>Encourage every team member</span></li>
+                                    <li><img class="img1" src="assets/images/pricing/img1.png" alt=""> <span>We are
+                                            privileged to work with.</span></li>
+                                    <li><img class="img1" src="assets/images/pricing/img1.png" alt=""> <span>24/7 system
+                                            monitoring</span></li>
+                                    <li><img class="img2" src="assets/images/pricing/img2.png" alt=""> <span>Encourage
+                                            every team member</span></li>
                                 </ul>
                             </div>
                             <div class="prici_btn">
                                 <a href="#" class="btn_See">See More<i class="ti-arrow-right"></i></a>
                             </div>
                             <div class="shape_1">
-                                <svg version="1.0"
-                                width="100%" height="100%" viewBox="0 0 400.000000 202.000000"
-                                preserveAspectRatio="xMidYMid meet">
-
-                                <g transform="translate(0.000000,202.000000) scale(0.100000,-0.100000)"
-                                 stroke="none">
-                                <path d="M0 1014 l0 -1006 23 16 c116 84 421 280 538 345 396 219 822 371
-                                1167 415 152 20 392 20 532 2 528 -71 1130 -338 1721 -765 19 -13 19 6 19 993
-                                l0 1006 -2000 0 -2000 0 0 -1006z"/>
-                                </g>
-                                </svg>
-                            </div>
-                            <div class="shape_2">
-                                <svg version="1.0"
-                                    width="100%" height="100%" viewBox="0 0 400.000000 202.000000"
+                                <svg version="1.0" width="100%" height="100%" viewBox="0 0 400.000000 202.000000"
                                     preserveAspectRatio="xMidYMid meet">
 
                                     <g transform="translate(0.000000,202.000000) scale(0.100000,-0.100000)"
-                                     stroke="none">
-                                    <path d="M0 1006 l0 -1006 2000 0 2000 0 0 1006 c0 987 0 1006 -19 993 -591
+                                        stroke="none">
+                                        <path d="M0 1014 l0 -1006 23 16 c116 84 421 280 538 345 396 219 822 371
+                                1167 415 152 20 392 20 532 2 528 -71 1130 -338 1721 -765 19 -13 19 6 19 993
+                                l0 1006 -2000 0 -2000 0 0 -1006z" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="shape_2">
+                                <svg version="1.0" width="100%" height="100%" viewBox="0 0 400.000000 202.000000"
+                                    preserveAspectRatio="xMidYMid meet">
+
+                                    <g transform="translate(0.000000,202.000000) scale(0.100000,-0.100000)"
+                                        stroke="none">
+                                        <path d="M0 1006 l0 -1006 2000 0 2000 0 0 1006 c0 987 0 1006 -19 993 -591
                                     -427 -1193 -694 -1721 -765 -597 -79 -1305 138 -2030 622 -102 68 -195 131
-                                    -207 140 l-23 16 0 -1006z"/>
+                                    -207 140 l-23 16 0 -1006z" />
                                     </g>
                                 </svg>
                             </div>
@@ -961,7 +1018,6 @@
                 <img src="assets/images/cta/shape.png" alt="">
             </div>
         </section>
-
 
         <!-- ==== blog start ==== -->
         <section class="blog_section s4 section_space">
@@ -1083,7 +1139,6 @@
             </div>
         </section>
 
-
         <!-- ==== footer start ==== -->
         <section class="footer_section">
             <div class="footer_top">
@@ -1198,7 +1253,7 @@
         <script src="assets/js/counterup.min.js"></script>
         <script src="assets/js/waypoints.js"></script>
         <script src="assets/js/datepicker.js"></script>
-         <script src="assets/js/wow.js"></script>
+        <script src="assets/js/wow.js"></script>
         <script src="assets/js/jquery.nice-select.js"></script>
         <script src="assets/js/script.js"></script>
 
