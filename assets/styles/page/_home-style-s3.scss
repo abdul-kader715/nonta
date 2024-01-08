@@ -966,7 +966,8 @@
 
 
 /* faq_section */
-.faq_section {
+.faq_section,
+.faq_section_s2 {
     position: relative;
     z-index: 1;
     background: url(../images/faq/bg.jpg) center / cover no-repeat;
@@ -1171,6 +1172,68 @@
         }
     }
 }
+
+.faq_section_s2 {
+    background: transparent;
+    padding-bottom: 70px;
+
+    &::before {
+        display: none;
+    }
+
+    .faq_content {
+        padding: 0px 40px 0px 60px;
+        background: transparent;
+
+        @media (max-width:575px) {
+            padding: 0px 10px 0px;
+        }
+    }
+
+    .accordion .accordion-button {
+        background: #efeff0;
+        color: #636363;
+    }
+
+    .accordion .accordion-button::after {
+        color: #636363;
+        background: transparent;
+    }
+
+    .accordion .accordion-button i {
+        color: $white;
+    }
+
+
+    .accordion-item {
+        border: 1px solid $white;
+    }
+
+    .accordion .accordion-button:not(.collapsed) {
+        background: #df5311;
+        color: $white;
+
+        &:after {
+            color: $white;
+        }
+
+        i {
+            color: #636363;
+        }
+
+
+    }
+
+    .accordion-body {
+        border: 1px solid #dedede;
+    }
+
+    .accordion .accordion-body span {
+        color: #636363;
+    }
+
+}
+
 
 /* blog_section_s3 */
 .blog_section_s3 {

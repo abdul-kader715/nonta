@@ -7,7 +7,7 @@
         border-radius: 40px;
         box-shadow: 0px 2px 8px 0px rgb(99 99 99 / 5%);
         outline: 1px dotted transparent;
-        outline-offset: -15px;
+        outline-offset:0px;
         transition: all 0.5s ease-in-out;
 
         .item {
@@ -300,7 +300,7 @@
 
     .line_shape {
         position: absolute;
-        left: 46.6%;
+        left: 46.9%;
         top: 50%;
         transform: translate(-50%, -50%);
         z-index: -1;
